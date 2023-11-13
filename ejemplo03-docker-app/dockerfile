@@ -1,0 +1,19 @@
+#Usar la imagen base de node
+FROM node:14
+
+#Establecer el directorio de Trabajo
+WORKDIR /usr/src/app
+
+#Copiar los archivos de la aplicacion al contenedor
+COPY package*.json ./
+COPY index.js .
+
+#Instalar las dependencias
+RUN npm install
+
+#Expose el puerto en el que la aplicacin se ejecutara
+EXPOSE 3000
+
+#Comando para ejecutar la aplicacion
+CMD ["node","index.js"]
+

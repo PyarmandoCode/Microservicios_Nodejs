@@ -13,11 +13,8 @@ const Author = sequelize.define("Author" ,{
     nombreautor: {
         type:DataTypes.STRING,
         allowNull:false,
-    },
-    correoElectronico: {
-        type: Sequelize.STRING, // Tipo de datos del campo (puede variar)
-        allowNull: true // Opcional: indica si el campo puede ser nulo o no
-      }
+    }
+    
 });
 
 export default Author;

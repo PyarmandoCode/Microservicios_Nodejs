@@ -1,6 +1,6 @@
 import Router from "express";
-import { Author_Books ,CreateAuthor,CreateBooks}  from "../controllers/authorController.js";
-
+import { Author_Books ,CreateAuthor}  from "../controllers/authorController.js";
+import { CreateBooks } from "../controllers/booksController.js";
 
 const router = Router();
 

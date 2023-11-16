@@ -9,3 +9,5 @@ values(2,"Libro1",1,now(),now())
 
 #Api para listar Autores-Books
 http://localhost:3000/api/authoresbooks
+http://localhost:3000/api/createauthor
+http://localhost:3000/api/createbooks

@@ -25,8 +25,8 @@ Books.belongsTo(Author , {
 });
 
 //Un Author tiene muchos libros
-Author.hasMany(Libro , {
-    foreignKey:idautor
+Author.hasMany(Books , {
+    foreignKey:"idautor"
 });
 
 

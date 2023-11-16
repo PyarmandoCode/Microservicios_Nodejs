@@ -1,6 +1,6 @@
 //Caracteristica de  ECMAScript Modules
 import { DataTypes } from "sequelize";
-import sequelize from "../sequelize";
+import sequelize from "../sequelize.js";
 
 
 

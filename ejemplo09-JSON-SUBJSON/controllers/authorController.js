@@ -1,5 +1,5 @@
-import Author from '../models/authorModels';
-import Books from '../models/booksModels';
+import Author from '../models/authorModels.js';
+import Books from '../models/booksModels.js';
 
 export const Author_Books = async (req,res) => {
     const author_books = await Author.findAll({include:Books});

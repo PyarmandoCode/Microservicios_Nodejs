@@ -39,3 +39,16 @@ export const updateEmployess = async (req, res) => {
 
     res.send(rows);
 }
+
+
+export const getEmployee = async (req, res) => {
+    const [rows] = await pool.query('SELECT * FROM employee WHERE id =?', [req.params.id])
+
+    if (rows.length <= 0) return res.status(404).json({ mesagge: 'Empleado no existe' })
+
+    res.json(rows)
+
+
+
+
+}
